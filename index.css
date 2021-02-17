@@ -1,0 +1,84 @@
+:root {
+   --natural: #4d4d4d;
+   --naturalColor: white;
+   --operator: #721212;
+   --operatorColor: white;
+  }
+
+  /* quick reset so all our padding is the right size */
+* {
+    box-sizing: border-box;
+  }
+
+  
+/* add some spacing */
+body {
+    background: #F6F6F6;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+ /* limit the width and center */
+#app {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #111;
+    border-radius: 5px;
+  }
+
+  #buttonsContainer {
+    /* small spacing within our container */
+    padding: 20px;
+  
+    /* the grid stuff! */
+    display: grid;
+  
+    /* create 4 columns */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* add the grid gap */
+    grid-gap: 15px;
+  }
+
+.natural{
+    background-color:var(--natural);
+    color:var(--naturalColor);
+    border: 1px solid #111; /* black border */
+    padding: 20px;
+    border-radius: 5px; /* rounded corners */
+    font-size: 22px; /* larger fonts */
+    cursor: pointer; /* make it look clickable */
+}  
+
+.operator{
+    background-color: var(--operator);
+    color:var(--operatorColor);
+    border: 1px solid #111; /* black border */
+    padding: 20px;
+    border-radius: 5px; /* rounded corners */
+    font-size: 22px; /* larger fonts */
+    cursor: pointer; /* make it look clickable */
+}  
+
+#app input   {
+    /* reset basic form styles */
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+  
+    padding: 10px;
+    width: 100%;
+    border-bottom: 2px solid #111;
+    color: #333;
+    text-align: right;
+    font-size: 40px;
+    border-radius: 0;
+  }
+
+  #clear{
+    grid-column: span 3;
+  } 
+
+  #zero{
+    grid-column: span 2;  
+  }
